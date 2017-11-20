@@ -3,7 +3,322 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input id="show-settings" type="checkbox">
+
+    <input id="show-visited" type="checkbox" class="input-visited" checked>
+    <input id="show-humor" type="checkbox" class="input-humor" checked>
+    <input id="show-tv" type="checkbox" class="input-tv" checked>
+    <input id="show-auto" type="checkbox" class="input-auto" checked>
+    <input id="show-weather" type="checkbox" class="input-weather" checked>
+    <input id="show-traffic" type="checkbox" class="input-traffic" checked>
+    <input id="show-map" type="checkbox" class="input-map" checked>
+    <input id="show-affiche" type="checkbox" class="input-affiche" checked>
+
+    <main class="wrapper">
+        <div class="location">
+            <a href="#" class="link">Екатеринбург</a>
+        </div>
+        <div class="additional-info">
+            <input type="checkbox" id="settings" class="additional-settings">
+            <label for="settings">
+                Настройка
+            </label>
+            <section class="show-settings">
+                <label for="show-visited">Посещаемое</label>
+                <br>
+                <label for="show-humor">Анекдоты</label>
+                <br>
+                <label for="show-tv">Телепрограмма</label>
+                <br>
+                <label for="show-auto">Автомобильные новости</label>
+                <br>
+                <label for="show-weather">Погода</label>
+                <br>
+                <label for="show-traffic">Пробки</label>
+                <br>
+                <label for="show-map">Карта</label>
+                <br>
+                <label for="show-affiche">Афиша</label>
+            </section>
+            <div class="mail">
+                <div class="mail-login">
+                    login
+                </div>
+                <p>Почта 138</p>
+            </div>
+        </div>
+        <div class="yandex-logo">
+            <p>Яндекс</p>
+        </div>
+        <div class="yandex-search">
+            <div class="links">
+                <a href="#" class="link">Видео</a>
+                <a href="#" class="link">Картинки</a>
+                <a href="#" class="link">Новости</a>
+                <a href="#" class="link">Карты</a>
+                <a href="#" class="link">Маркет</a>
+                <a href="#" class="link">Переводчик</a>
+                <a href="#" class="link">Музыка</a>
+                <a href="#" class="link">ещё</a>
+            </div>
+            <div class="input-search">
+                <input type="text" class="input-field">
+                <button class="search-button">Найти</button>
+            </div>
+            <span>Найдётся всё. Например,</span>
+            <a href="#" class="gray small link">
+                быть или не быть
+            </a>
+        </div>
+
+        <div class="news">
+            <div class="world-news">
+                <header>
+                    <a href="#" class="link header">Сейчас в СМИ</a>
+                    <a href="#" class="link header blue">В Екатеринбурге</a>
+                    <span class="gray small">20 ноября, понедельник 12:02</span>
+                </header>
+                <div class="news-content">
+                    <ul>
+                        <li>
+                            <a href="#" class="link black">
+                                Умер серийный убийца Чарльз Мэнсон</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link black">
+                                Бизнес пожаловался Путину на правительство из-за новых сборов</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link black">
+                                «Зеленые» отказались создавать коалицию с блоком Меркель</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link black">Мнение: остается единственный способ обнаружить
+                                подлодку «Сан-Хуан»</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link black">
+                                СМИ сообщили о найденном в США советском «теплоходе-призраке»</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="exchange-rates">
+                    <div>
+                        <a href="#" title="Курс ЦБ РФ на 18/11" class="link black bold">USD ЦБ</a>
+                        <span>59,63</span>
+                    </div>
+                    <div>
+                        <a href="#" title="Курс ЦБ РФ на 18/11" class="link black bold">EUR ЦБ</a>
+                        <span>70,70</span>
+                    </div>
+                    <div>
+                        <a href="#" title="Курс ЦБ РФ на 18/11" class="link black bold">НЕФТЬ</a>
+                        <span>62,74</span>
+                        <span class="gray small">+2,13%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="yandex-news">
+                <img src="browser.png" alt="browser">
+                <a href="#" class="link header">Браузер без опасности</a>
+                <span>Технология Протект</span>
+            </div>
+        </div>
+        <div class="car">
+            <img src="car.PNG" alt="car">
+        </div>
+
+        <div class="info">
+            <div class="column1">
+                <div class="visited">
+                    <a href="#" class="link header">Посещаемое</a>
+                    <div>
+                        <a href="#" class="black bold link">Маркет</a> —
+                        <a href="#" class="black link">Китайская распродажа</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black bold link">Авто.ру</a> —
+                        <a href="#" class="black link">рестайлинг Tucson</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black bold link">Недвижимость</a> —
+                        <a href="#" class="black link">2-комнатные от 2,3 млн</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black bold link">Работа</a> —
+                        <a href="#" class="black link">медицинская сестра</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black bold link">Путешествия</a> —
+                        <a href="#" class="black link">туры в Грецию</a>
+                    </div>
+                </div>
+
+                <div class="humor">
+                    <a href="#" class="link header">Анекдоты</a>
+
+                    <input type="radio" name="humor" id="humor1" checked>
+                    <div class="humor-show">
+                        <span class="black bold">Раздел:</span>
+                        <a href="#" class="link">Медицинские</a>
+                        <br>- Вас лечить хорошо или бесплатно?
+                    </div>
+                    <input type="radio" name="humor" id="humor2">
+                    <div class="humor-show">
+                        <span class="black bold">Раздел:</span>
+                        <a href="#" class="link">Политические</a>
+                        <br>Внедрение электронных госуслуг позволяет увеличить штат
+                        чиновников втрое, бардак впятеро, а сами услуги не оказывать
+                        вообще, потому что компьютер сломался.
+                    </div>
+                    <input type="radio" name="humor" id="humor3">
+                    <div class="humor-show">
+                        <span class="black bold">Раздел:</span>
+                        <a href="#" class="link">Исторические</a>
+                        <br>На допросе в НКВД: «Были ли колебания в проведении генеральной
+                        линии партии?» — «Колебался вместе с линией».
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <label class="link" for="humor1">⟳ Показать еще</label>
+                    <label class="link" for="humor2">⟳ Показать еще</label>
+                    <label class="link" for="humor3">⟳ Показать еще</label>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="tv">
+                    <a href="#" class="link header">Телепрограмма</a>
+                    <div class="tv-program">
+                        <span>16:30</span>
+                        <a href="#" class="black link">Новости</a>
+                        <a href="#" class="gray small link">41 Домашний</a>
+                    </div>
+                    <div class="tv-program">
+                        <span>16:30</span>
+                        <a href="#" class="black link">Место встречи</a>
+                        <a href="#" class="gray small link">НТВ</a>
+                    </div>
+                    <div class="tv-program">
+                        <span>16:30</span>
+                        <a href="#" class="black link">Детективы</a>
+                        <a href="#" class="gray small link">Первый канал</a>
+                    </div>
+                    <div class="tv-program">
+                        <span>16:45</span>
+                        <a href="#" class="black link">Гадалка</a>
+                        <a href="#" class="gray small link">ТВ-3</a>
+                    </div>
+                </div>
+
+                <article class="auto">
+                    <a href="#" class="link header">Автомобильные новости</a>
+                    <div class="auto-news">
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>00:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>01:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>02:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>03:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>04:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>05:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>06:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>07:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>08:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>09:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>10:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>11:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>12:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>13:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>14:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>15:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>16:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>17:00</span>
+                        <br>
+                        <a href="#" class="link black">Бензин снова подорожал</a>
+                        <span>18:00</span>
+                        <br>
+                    </div>
+                </article>
+            </div>
+            <div class="column3">
+                <div class="weather">
+                    <a href="#" class="link header">Погода</a>
+                    <a href="#" class="link black bold">
+                        <img alt="show weather" src="partly_cloudy.png" class="small-img">1 °C</a>
+                    <br>
+                    <a href="#" class="link black">Ночь -5</a>,
+                    <a href="#" class="link black">Утро +3</a>
+                </div>
+
+                <div class="traffic">
+                    <a href="#" class="link header">Пробки</a>
+                    <a href="#" class="link black bold">
+                        <img alt="green" src="green.jpg" class="small-img">1 балл</a>
+                    <br>
+                    <span>На дорогах свободно</span>
+                </div>
+
+                <div class="map">
+                    <a href="#" class="link header">Карта Екатеринбурга</a>
+                    <br>
+                    <a href="#" class="link black bold">Такси</a>
+                    <a href="#" class="link black bold">Расписания</a>
+                    <br>
+                    <a href="#" class="link black bold">Междугородные автобусы</a>
+                </div>
+
+                <div class="affiche">
+                    <a href="#" class="link header">Афиша</a>
+                    <br>
+                    <a href="#" class="link black">Тор:Рагнарек</a>
+                    <span class="gray small">Фентези</span>
+                    <br>
+                    <a href="#" class="link black">Зеленая миля</a>
+                    <span class="gray small">Драма</span>
+                    <br>
+                    <a href="#" class="link black bold">Концерты</a>
+                    <span class="link black bold">Noize Mc</span>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
