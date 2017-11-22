@@ -338,7 +338,8 @@ input,
     bottom: 10px;
 }
 
-.button__text::before {
+.button__text::before 
+{
     position: absolute;
     border-width: 22px 0 22px 11px;
     top: -6px;
@@ -351,5 +352,4 @@ input,
     border-color: white;
     border-left-color: inherit;
     margin-right: 8px;
-    
 }
