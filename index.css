@@ -108,7 +108,7 @@
     background-color: #ff0;
     border: 0;
     cursor: pointer;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .news
@@ -350,4 +350,6 @@ input,
     color: yellow;
     border-color: white;
     border-left-color: inherit;
+    margin-right: 8px;
+    
 }
