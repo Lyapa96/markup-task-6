@@ -348,8 +348,8 @@ input,
     height: 0;
     content: '';
     border-style: solid;
-    color: yellow;
-    border-color: white;
+    color: #ff0;
+    border-color: #fff;
     border-left-color: inherit;
     margin-right: 8px;
 }
