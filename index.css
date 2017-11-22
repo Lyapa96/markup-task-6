@@ -102,11 +102,13 @@
 
 .yandex-search .search-button
 {
+    position: relative;
     width: 80px;
     height: 31px;
     background-color: #ff0;
     border: 0;
     cursor: pointer;
+    overflow-y: hidden;
 }
 
 .news
@@ -204,26 +206,26 @@
     display: none;
 }
 
-input[id='show-visited']:checked ~ .wrapper label[for='show-visited']::after,
-input[id='show-humor']:checked ~ .wrapper label[for='show-humor']::after,
-input[id='show-tv']:checked ~ .wrapper label[for='show-tv']::after,
-input[id='show-auto']:checked ~ .wrapper label[for='show-auto']::after,
-input[id='show-weather']:checked ~ .wrapper label[for='show-weather']::after,
-input[id='show-traffic']:checked ~ .wrapper label[for='show-traffic']::after,
-input[id='show-map']:checked ~ .wrapper label[for='show-map']::after,
-input[id='show-affiche']:checked ~ .wrapper label[for='show-affiche']::after
+#show-visited:checked ~ .wrapper label[for='show-visited']:after,
+#show-humor:checked ~ .wrapper label[for='show-humor']::after,
+#show-tv:checked ~ .wrapper label[for='show-tv']::after,
+#show-auto:checked ~ .wrapper label[for='show-auto']::after,
+#show-weather:checked ~ .wrapper label[for='show-weather']::after,
+#show-traffic:checked ~ .wrapper label[for='show-traffic']::after,
+#show-map:checked ~ .wrapper label[for='show-map']::after,
+#show-affiche:checked ~ .wrapper label[for='show-affiche']::after
 {
     content: '\f00c';
 }
 
-input[id='show-visited']:not(:checked) ~ .wrapper .visited,
-input[id='show-humor']:not(:checked) ~ .wrapper .humor,
-input[id='show-tv']:not(:checked) ~ .wrapper .tv,
-input[id='show-auto']:not(:checked) ~ .wrapper .auto,
-input[id='show-weather']:not(:checked) ~ .wrapper .weather,
-input[id='show-traffic']:not(:checked) ~ .wrapper .traffic,
-input[id='show-map']:not(:checked) ~ .wrapper .map,
-input[id='show-affiche']:not(:checked) ~ .wrapper .affiche
+#show-visited:not(:checked) ~ .wrapper .visited,
+#show-humor:not(:checked) ~ .wrapper .humor,
+#show-tv:not(:checked) ~ .wrapper .tv,
+#show-auto:not(:checked) ~ .wrapper .auto,
+#show-weather:not(:checked) ~ .wrapper .weather,
+#show-traffic:not(:checked) ~ .wrapper .traffic,
+#show-map:not(:checked) ~ .wrapper .map,
+#show-affiche:not(:checked) ~ .wrapper .affiche
 {
     display: none;
 }
@@ -276,9 +278,9 @@ input,
     display: block;
 }
 
-.humor input[id='humor1']:checked ~ label[for='humor2'],
-.humor input[id='humor2']:checked ~ label[for='humor3'],
-.humor input[id='humor3']:checked ~ label[for='humor1']
+.humor #humor1:checked ~ label[for='humor2'],
+.humor #humor2:checked ~ label[for='humor3'],
+.humor #humor3:checked ~ label[for='humor1']
 {
     display: block;
 }
@@ -334,4 +336,18 @@ input,
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 1));
     bottom: 10px;
+}
+
+.button__text::before {
+    position: absolute;
+    border-width: 22px 0 22px 11px;
+    top: -6px;
+    right: -8px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    color: yellow;
+    border-color: white;
+    border-left-color: inherit;
 }
