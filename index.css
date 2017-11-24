@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'FontAwesome';
-    src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src: local('FontAwesome'), url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,10 +34,14 @@
     content: '\f124     ' ;
 }
 
+.flex
+{
+    display: flex;
+}
+
 .additional-info
 {
     grid-area: additional-info;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -61,7 +65,6 @@
 .yandex-logo
 {
     grid-area: yandex-logo;
-    display: flex;
     justify-content: flex-end;
 }
 
@@ -81,23 +84,20 @@
     grid-area: yandex-search;
 }
 
+.big-width
+{
+    width: 700px;
+}
+
 .yandex-search .input-field
 {
     border: 2px solid #ff0;
     height: 25px;
-    width: 700px;
 }
 
 .yandex-search .links
 {
-    width: 700px;
-    display: flex;
     justify-content: space-around;
-}
-
-.input-search
-{
-    display: flex;
 }
 
 .yandex-search .search-button
@@ -114,7 +114,6 @@
 .news
 {
     grid-area: news;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -133,7 +132,6 @@
 .yandex-news
 {
     flex-basis: 150px;
-    display: flex;
     flex-direction: column;
 }
 
@@ -161,7 +159,6 @@
 
 .exchange-rates
 {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -171,14 +168,14 @@
     color: #000;
 }
 
+.show-settings label
+{
+    display: block;
+}
+
 .car
 {
     grid-area: car;
-}
-
-.car img
-{
-    width: 700px;
 }
 
 .show
