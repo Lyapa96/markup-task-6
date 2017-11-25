@@ -302,16 +302,17 @@ input,
     width: 25px;
 }
 
+.auto
+{
+    width: 260px;
+    overflow-x: hidden;
+}
+
 .auto-news
 {
     height: 200px;
+    width: 280px;
     overflow: auto;
-    -ms-overflow-style: none;
-}
-
-.auto-news::-webkit-scrollbar 
-{
-    width: 0;
 }
 
 .shadow
